@@ -1,0 +1,441 @@
+.sec3 {
+    position: relative;
+    min-height: 60vh;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sec3_img {
+    position: relative;
+    min-height: 90vh;
+    overflow: hidden;
+    width: 100%;
+    background: radial-gradient(rgb(27, 95, 18), rgb(47, 177, 29));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sec3 h1 {
+    position: relative;
+    bottom: 12vh;
+    color: #ff4d05;
+    font-size: 5rem;
+    border-bottom: .2rem solid rgb(235, 102, 102);
+}
+
+.sec3__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.sec3_box .sec3_percent svg {
+    position: relative;
+    width: 25rem;
+    height: 15rem;
+    z-index: 1000;
+}
+
+.sec3_box .sec3_percent svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #aa3939;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(.5rem, .5rem);
+}
+
+.sec3__percent svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.sec3_card:nth-child(1) .sec3box .sec3_percent svg circle:nth-child(2) {
+    stroke: #1a1d1b;
+    stroke-dashoffset: calc(440 - (440*90)/100);
+}
+
+.sec3_card:nth-child(2) .sec3box .sec3_percent svg circle:nth-child(2) {
+    stroke: #e66060;
+    stroke-dashoffset: calc(440 - (440*70)/100);
+}
+
+.sec3_card:nth-child(3) .sec3box .sec3_percent svg circle:nth-child(2) {
+    stroke: #6074e6;
+    stroke-dashoffset: calc(440 - (440*55)/100);
+}
+
+.sec3__card {
+    position: relative;
+    background: url('py.jpg');
+    padding: -rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    box-shadow: 0 0 3rem rgb(0, 0, 0);
+    margin: -4rem;
+}
+
+.sec3_card .sec3_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec3__card:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background: rgba(225, 225, 225, .05);
+    z-index: 1;
+    transition: .3s;
+}
+
+.sec3__card:hover:before {
+    transform: translateX(50%);
+    width: 90%;
+}
+
+.sec3__percent {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 0 2rem #000;
+}
+
+.sec3__percent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.number h2 {
+    color: rgba(241, 224, 233, 0.767);
+    font-size: 4rem;
+    font-weight: 900;
+    transition: .3s;
+}
+
+.number h2 span {
+    font-size: 2rem;
+    transition: .3s;
+}
+
+.sec3__card:hover .number h2 span .sec3__text {
+    font-size: 1.5rem;
+    color: #ff4d05;
+}
+
+.sec3__card:hover .sec3__text {
+    color: #fff;
+}
+
+.sec3__card:hover {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.sec3__text {
+    color: #ff4d05;
+    margin-top: 2.5rem;
+    transition: .3s;
+    background: rgba(0, 0, 0, 0.048);
+    position: relative;
+    top: vh;
+}
+
+.sec3_card:hover .sec3_text {
+    color: #fff;
+}
+
+.sec3__card:hover .number h2 {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.sec3__card:hover {
+    transform: translateY(-1rem);
+}
+
+.sec3_img img:hover {
+    transform: translateY(-1rem);
+    color: #fff;
+    transform: scaleZ(7 5 6);
+}
+
+.sec4 {
+    overflow: hidden;
+    position: relative;
+    min-height: 70vh;
+    width: 100%;
+    background: radial-gradient(#333, #000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec4__container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.sec4__box1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: .5;
+}
+
+.sec4__content1 {
+    margin-bottom: 1rem;
+}
+
+.sec4__content1 h2 {
+    color: #fff;
+    font-size: 3rem;
+    border-bottom: .2rem solid #ff7b7b;
+    width: fit-content;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+}
+
+.sec4__content1 h2 span {
+    color: #ff6060;
+}
+
+.sec4__content1 p {
+    color: #fff;
+    font-size: 3vh;
+}
+
+.sec4__content2Icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.sec4__content2Icon h2 {
+    margin-left: .5rem;
+}
+
+.sec4__content2 {
+    margin: .5rem 0;
+}
+
+.sec4__content3 ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.sec4__content3 ul li {
+    margin: 0 1.5rem 0 0;
+}
+
+.sec4__content3 ul li a {
+    color: #fff;
+    font-size: 2rem;
+    border: .2rem solid #fff;
+    padding: .4rem;
+    border-radius: 20%;
+    transition: .3s;
+}
+
+.sec4__content3 ul li a:hover {
+    color: rgba(255, 255, 255, .5);
+}
+
+.sec4__box2 h2 {
+    color: #fff;
+    font-size: 3rem;
+    border-bottom: .2rem solid #ff8282;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+}
+
+.sec4__links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.sec4__links ul li {
+    margin: .5rem 0;
+}
+
+.sec4__links ul li a {
+    color: rgba(255, 255, 255, .5);
+    transition: .3s;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.sec4__links ul li a:hover {
+    color: #fff;
+}
+
+.sec4__box3 h2 {
+    color: #fff;
+    font-size: 3rem;
+    border-bottom: .2rem solid #ff7d7d;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+    width: fit-content;
+}
+
+.sec4__box3 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sec4__box3 form input {
+    border: none;
+    outline: none;
+    background: #fff;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .5);
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    width: 100%;
+    border-radius: 3rem;
+}
+
+.sec4__box3 form input::placeholder {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.sec4__box3 form button {
+    border: none;
+    background: none;
+    outline: none;
+    padding: .5rem 2rem;
+    color: #fff;
+    background: #e66060;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 3rem;
+}
+
+.sec4__box3 form button:hover {
+    color: #ff6060;
+    background: #fff;
+}
+
+
+/* media query start here  */
+
+@media(max-width:360px) {
+    .sec1__menuIcon {
+        display: inline-block;
+    }
+    .sec1__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10rem;
+        /* background: blue; */
+        width: 100%;
+        padding: 0 2rem;
+    }
+    .navBar__menu {
+        display: none;
+    }
+    .sec1_content .sec1_contentDetail h1 {
+        font-weight: 900;
+        font-size: 3.5rem;
+        text-transform: capitalize;
+        transform: translateY(7rem);
+    }
+    .sec1__imgBx {
+        position: relative;
+        width: 30rem;
+        /* background: red; */
+        margin-top: 5rem;
+    }
+    .sec2__container {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0 2rem;
+        flex-direction: column;
+    }
+    .sec2__heading h2 {
+        position: relative;
+        font-size: 2.5rem;
+        color: #333;
+        text-transform: capitalize;
+    }
+    .sec2__aboutme1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex: .5;
+        margin: 5rem 0;
+    }
+    .sec2__aboutme2 {
+        position: relative;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 3rem 0;
+    }
+    .sec4__box1 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: column;
+        flex: .5;
+        margin: 2.5rem 0 4rem 0;
+    }
+    .sec4__box2 {
+        margin: 2.5rem 0;
+    }
+    p {
+        padding: 6rem;
+        font-size: 53vh;
+    }
+}
